@@ -214,6 +214,8 @@ def get_passcode(self):
     global wrong_answer_label
     wrong_answer_label = tk.Label(root, text = "", bg = "#c4f0f8", fg = "Red", font = ("Arial", 16))
     wrong_answer_label.place(relx=0.5, rely=0.7, anchor="center")
+    backbutton = tk.Button(root, text="Back to Main Menu", command=next_menu, highlightbackground="#97d7e3", fg="black", font = ("Arial", 12))
+    backbutton.place(relx=0.5, rely=0.85, anchor="s")
         
 def passcode():
     global answer_entry

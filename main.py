@@ -35,7 +35,7 @@ legendary_sound_thread.start()
 
 def submit_name():
     global counter
-    correct_answer = "OHKIDO"
+    correct_answer = "YUKINARI"
     answer = answer_entry.get().upper()
     if answer == correct_answer:
         next_menu()
@@ -289,7 +289,7 @@ def next_menu():
 
 
 
-question_label = tk.Label(root, text="Login", bg="#c4f0f8", fg = "black", font = ("Arial", 18))
+question_label = tk.Label(root, text="Login \n Hint: My first name.", bg="#c4f0f8", fg = "black", font = ("Arial", 18))
 question_label.place(relx = 0.5, rely = 0.4, anchor="center")
 
 

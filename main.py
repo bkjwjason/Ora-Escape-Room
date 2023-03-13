@@ -45,7 +45,7 @@ def submit_name():
             game_over()
         else:
             counter += 1
-            wrong_answer_label.config(text="Login Failed! \n" + " You used " + str(counter) + " / 3 attempts.")
+            wrong_answer_label.config(text="Login Failed! \n" + " You used " + str(counter) + " / 3 attempts. \n \n Hint: My first name.")
             answer_entry.delete(0, tk.END)
 
 def game_over():
@@ -290,7 +290,7 @@ def next_menu():
 
 
 
-question_label = tk.Label(root, text="Login \n Hint: My first name.", bg="#c4f0f8", fg = "black", font = ("Arial", 18))
+question_label = tk.Label(root, text="Login", bg="#c4f0f8", fg = "black", font = ("Arial", 18))
 question_label.place(relx = 0.5, rely = 0.4, anchor="center")
 
 
